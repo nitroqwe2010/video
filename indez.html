@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - MARS IT</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .post {
+            color: red;
+            border: #EF400F solid 2px;
+            width: 100px;
+            height: 40px;
+        }
+        input {
+            padding: 5px;
+            margin: 40px 0px;
+            background-color: black;
+            border: none;
+            width: 300px;
+            height: 40px;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+        }
+        button {
+            background-color: blue;
+            border: none;
+            width: 100px;
+            height: 40px;
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        .product {
+            display: inline-block;
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 20%;
+        }
+        .moter{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        /* universal stayl */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+body {
+    margin: 0px;
+}
+
+/* header */
+
+header {
+    box-shadow: 0px 3px 5px grey;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header ul img { 
+    width: 40px;
+}
+header a {
+    color: #BCAAAA;
+}
+header a:hover {
+    color: #EF400F;
+}
+
+/* footer style */
+
+footer {
+    margin-top: 100px;
+    box-shadow: 0px -3px 4px gray;
+    padding-top: 20px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    text-decoration: underline;
+    color: black;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container img {
+    width: 110px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="IMG/image 2.png" alt="">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Learing</a>
+                </li>
+                <li>
+                    <a href="#">SHop</a>
+                </li>
+                <li>
+                    <a href="#" style="border: #EF400F solid 3px; color: #EF400F; width: 100px; padding: 10px 10px; border-radius: 20px;">Post yarstish</a>
+                </li>
+                <li>
+                    <img src="IMG/post.png" alt="">
+                </li>
+            </ul>
+        </div>
+     </header>
+    <div class="header">
+        <input type="text" id="search" placeholder="Search...">
+        <button onclick="searchProducts()">Click</button>
+    </div>
+    <section class="moter" id="products">
+        <div class="product" data-name="Mars rug" data-coins="100">
+            <img src="./image 10.png" alt="">
+            <p>Mars rug</p>
+            <span>100 Coins</span>
+        </div>
+        <div class="product" data-name="Keyboard sticker" data-coins="49">
+            <img src="./image 22.png" alt="">
+            <p>Keyboard sticker</p>
+            <span>49 Coins</span>
+        </div>
+        <div class="product" data-name="Smart watch" data-coins="899">
+            <img src="./image 23.png" alt="">
+            <p>Smart watch</p>
+            <span>899 Coins</span>
+        </div>
+        <div class="product" data-name="Wireless keyboard" data-coins="350">
+            <img src="./image 24.png" alt="">
+            <p>Wireless keyboard</p>
+            <span>350 Coins</span>
+        </div>
+        <div class="product" data-name="Mouse" data-coins="359">
+            <img src="./image 25.png" alt="">
+            <p>Mouse</p>
+            <span>359 Coins</span>
+        </div>
+        <div class="product" data-name="AirPods" data-coins="499">
+            <img src="./image 26.png" alt="">
+            <p>AirPods</p>
+            <span>499 Coins</span>
+        </div>
+        <div class="product" data-name="Powerbank" data-coins="899">
+            <img src="./image 27.png" alt="">
+            <p>Powerbank</p>
+            <span>899 Coins</span>
+        </div>
+        <div class="product" data-name="USB flash drive" data-coins="299">
+            <img src="./image 28.png" alt="">
+            <p>USB flash drive</p>
+            <span>299 Coins</span>
+        </div>
+        <div class="product" data-name="Smartphone" data-coins="3699">
+            <img src="./image 29.png" alt="">
+            <p>Smartphone</p>
+            <span>3699 Coins</span>
+        </div>
+        <div class="product" data-name="Playstation 5" data-coins="7449">
+            <img src="./image 30.png" alt="">
+            <p>Playstation 5</p>
+            <span>7449 Coins</span>
+        </div>
+        <div class="product" data-name="Yandex Station" data-coins="1999">
+            <img src="./image 31.png" alt="">
+            <p>Yandex Station</p>
+            <span>1999 Coins</span>
+        </div>
+        <div class="product" data-name="Planshet Samsung" data-coins="4999">
+            <img src="./image 32.png" alt="">
+            <p>Planshet Samsung</p>
+            <span>4999 Coins</span>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>MARS IT School 2022</p>
+            <img src="IMG/image 2.png" alt="">
+            <a href="">Политика конфидециальности</a>
+        </div>
+    </footer>
+    <script>
+        function searchProducts() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let products = document.getElementsByClassName('product');
+            
+            for (let i = 0; i < products.length; i++) {
+                let productName = products[i].getAttribute('data-name').toLowerCase();
+                if (productName.includes(input)) {
+                    products[i].style.display = 'inline-block';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
